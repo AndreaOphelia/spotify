@@ -1,6 +1,12 @@
 ---
+ import "../styles/global.css";
 
----
+import Header from "./Header.astro"
+import Card from "./Card.astro"
+import Footer from "./Footer.astro"
+import Cardsecond from "./Cardsecond.astro"
+--- 
+
 
 <html lang="en">
 	<head>
@@ -11,6 +17,39 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<!-- header -->
+		<Header/>
+
+		<main>	
+			<h1>Spotify</h1>
+			<h2>Kunstnere</h2>
+			<section class="kunstnere">
+<Card header="Miley Cyrus">
+	<img src="https://via.assets.so/album.png?id=1&q=95&w=360&h=360&fit=fill" alt="miley cyrus">
+</Card>
+<Card header="Jay C">
+	<img src="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill" alt="Jay C">
+</Card>
+<Card header="Michael Jackson">
+	<img src="https://via.assets.so/album.png?id=6&q=95&w=360&h=360&fit=fill" alt="Michael Jackson">
+</Card>
+			</section>
+
+<h2>Album</h2>
+			<section class="kunstnere">
+<Card header="Bangerz">
+	<img src="https://via.assets.so/album.png?id=1&q=95&w=360&h=360&fit=fill" alt="miley cyrus">
+</Card>
+<Card header="Swagga like us">
+	<img src="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill" alt="Jay C">
+</Card>
+<Card header=" The essential Michael Jackson">
+	<img src="https://via.assets.so/album.png?id=6&q=95&w=360&h=360&fit=fill" alt="Michael Jackson">
+</Card>
+			</section>
+			<Cardsecond/>
+		</main>
+		<Footer/>
+	
 	</body>
 </html>

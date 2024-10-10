@@ -1,0 +1,52 @@
+.kunstnere {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #403f3f;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Mørk baggrund */
+  color: white;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1db954; /* Spotify grøn */
+}
+.menu {
+  display: flex;
+  gap: 20px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.search-container {
+  flex-grow: 1;
+  text-align: center;
+}
+.search-bar {
+  padding: 10px;
+  width: 60%;
+  border: none;
+  border-radius: 5px;
+}
+.login-button {
+  background-color: white;
+  color: #1db954;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+---
+// const header = Astro.props.header;
+const {header}=Astro.props
+---
+<article>
+    <slot/>
+    <!-- <img src="https://via.assets.so/album.png?id=1&q=95&w=360&h=360&fit=fill" alt="kunstner"> -->
+    <h3>{header}</h3>
+    <p>Kunstner</p>
+</article>
